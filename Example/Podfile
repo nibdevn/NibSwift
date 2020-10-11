@@ -2,10 +2,5 @@ use_frameworks!
 
 target 'NibSwift_Example' do
   pod 'NibSwift', :path => '../'
-
-  target 'NibSwift_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  
 end

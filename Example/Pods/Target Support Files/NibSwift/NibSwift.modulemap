@@ -1,0 +1,6 @@
+framework module NibSwift {
+  umbrella header "NibSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

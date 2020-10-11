@@ -1,0 +1,6 @@
+framework module Pods_NibSwift_Example {
+  umbrella header "Pods-NibSwift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
