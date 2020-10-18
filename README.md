@@ -18,6 +18,7 @@
 ## Contents
 > Extensions
 - Array
+- CGRect
 - Date
 - Formatter
 - Int
@@ -40,7 +41,7 @@
 ## Usage
 > Protocols
 - AppColorProtocol
-```
+```swift
 enum  AppColor: String, AppColorProtocol {
     var hex: String {
         return self.rawValue
@@ -60,7 +61,7 @@ AppColor.someColor3.color
 AppColor.someColor3.cgColor
 ```
 - AppFontProtocol
-```
+```swift
 enum  AppFont: String, AppFontProtocol {
 
     var name: String {
@@ -78,7 +79,7 @@ AppFont.someFont3.font(size: 17)
 ```
 
 > General
-```
+```swift
 AppleDevice.getDeviceInfo()
 ```
 
@@ -87,7 +88,7 @@ AppleDevice.getDeviceInfo()
 NibSwift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 ```ruby
-pod 'NibSwift', :tag => '1.0.0', :git => 'https://github.com/Nahanwoong/NibSwift'
+pod 'NibSwift', :tag => '1.1.0', :git => 'https://github.com/Nahanwoong/NibSwift'
 ```
 ## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
