@@ -1,6 +1,6 @@
 {
   "name": "NibSwift",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "summary": "This is NibSwift.",
   "description": "This is NibSwift. Thank you",
   "homepage": "https://github.com/Nahanwoong/NibSwift",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Nahanwoong/NibSwift.git",
-    "tag": "1.0.0"
+    "tag": "1.2.0"
   },
   "platforms": {
     "ios": "9.0"

@@ -26,10 +26,13 @@
 - Optional
 - String
 - UIApplication
+- UICollectionViewCell
 - UIColor
 - UIFont
 - UIImage
+- UILabel
 - UIScrollView
+- UITableViewCell
 - UIViewController
 - UIWindow
 > Protocols
@@ -88,7 +91,7 @@ AppleDevice.getDeviceInfo()
 NibSwift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 ```ruby
-pod 'NibSwift', :tag => '1.1.0', :git => 'https://github.com/Nahanwoong/NibSwift'
+pod 'NibSwift', :tag => '1.2.0', :git => 'https://github.com/Nahanwoong/NibSwift'
 ```
 ## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
