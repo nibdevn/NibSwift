@@ -1,10 +1,3 @@
-//
-//  UIWindow+Ex.swift
-//  AppApp
-//
-//  Created by MacBook-Na on 2020/10/02.
-//
-
 import Foundation
 import UIKit
 

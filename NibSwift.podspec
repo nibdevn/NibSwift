@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NibSwift'
-  s.version          = '1.2.0'
+  s.version          = '2.0.0'
   s.summary          = 'This is NibSwift.'
 
 # This description is used to generate tags and improve search results.
@@ -19,14 +19,14 @@ Pod::Spec.new do |s|
 
   s.description      = "This is NibSwift. Thank you"
 
-  s.homepage         = 'https://github.com/Nahanwoong/NibSwift'
+  s.homepage         = 'https://github.com/nibdevn/NibSwift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Nahanwoong' => 'nibdevn@gmail.com' }
-  s.source           = { :git => 'https://github.com/Nahanwoong/NibSwift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/nibdevn/NibSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version = '4.2'
   s.source_files = 'NibSwift/Sources/**/*'
   

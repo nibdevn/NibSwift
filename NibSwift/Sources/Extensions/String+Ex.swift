@@ -40,9 +40,25 @@ extension String {
             ).size
     }
     
-    public func customAttributedString(value: String, dic: [NSAttributedString.Key: Any]) -> NSMutableAttributedString {
+    public func attributedString(value: String, attribute: [NSAttributedString.Key: Any]) -> NSMutableAttributedString {
         let attributedString = NSMutableAttributedString(string: self)
-        attributedString.addAttributes(dic, range: (self as NSString).range(of: value))
+        attributedString.addAttributes(attribute, range: (self as NSString).range(of: value))
+        return attributedString
+    }
+    
+    public func attributedString(values: [String], attribute: [NSAttributedString.Key: Any]) -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString(string: self)
+        values.forEach {
+            attributedString.addAttributes(attribute, range: (self as NSString).range(of: $0))
+        }
+        return attributedString
+    }
+    
+    public func attributedString(attributes: [String: [NSAttributedString.Key: Any]]) -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString(string: self)
+        attributes.keys.filter { attributes[$0] != nil }.forEach {
+            attributedString.addAttributes(attributes[$0]!, range: (self as NSString).range(of: $0))
+        }
         return attributedString
     }
 }

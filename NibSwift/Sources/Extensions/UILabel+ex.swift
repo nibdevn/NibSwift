@@ -3,15 +3,15 @@ import UIKit
 
 extension UILabel {
     
-    var fitSize: CGSize {
+    public var fitSize: CGSize {
         return (text ?? "").getSizeString(font: font)
     }
     
-    var fitWidth: CGFloat {
+    public var fitWidth: CGFloat {
         return fitSize.width
     }
     
-    var fitHeight: CGFloat {
+    public var fitHeight: CGFloat {
         return fitSize.height
     }
 }

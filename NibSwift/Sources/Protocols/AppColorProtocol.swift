@@ -1,7 +1,6 @@
 import Foundation
 import UIKit
 
-
 public protocol AppColorProtocol {
     var hex: String { get }
 }

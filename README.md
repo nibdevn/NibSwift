@@ -1,7 +1,7 @@
 # NibSwift
 
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/Nahanwoong/NibSwift/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/nibdevn/NibSwift/blob/main/LICENSE)
 
 ## Summary
 
@@ -12,10 +12,12 @@
 - [Example](#example)
 
 ## Requirements
+
 - Swift 4.2
-- iOS 9.0+
+- iOS 10.0+
 
 ## Contents
+
 > Extensions
 - Array
 - CGRect
@@ -38,11 +40,14 @@
 > Protocols
 - AppColorProtocol
 - AppFontProtocol
+- AppNotificationProtocol
 > General
 - AppleDevice
 
 ## Usage
+
 > Protocols
+
 - AppColorProtocol
 ```swift
 enum  AppColor: String, AppColorProtocol {
@@ -63,6 +68,7 @@ AppColor.someColor2.cgColor
 AppColor.someColor3.color
 AppColor.someColor3.cgColor
 ```
+
 - AppFontProtocol
 ```swift
 enum  AppFont: String, AppFontProtocol {
@@ -81,6 +87,25 @@ AppFont.someFont2.font(size: 15)
 AppFont.someFont3.font(size: 17)
 ```
 
+- AppNotificationProtocol
+```swift
+
+enum AppNotification: String, AppNotificationProtocol {
+    
+    case signIn = "signIn"
+    case signOut = "signOut"
+    case updateToken = "updateToken"
+    
+    public var name: String {
+        return self.rawValue
+    }
+}
+
+AppNotification.signIn.addObserver(observer: Any?, selector: Selector, object: Any?)
+AppNotification.signIn.post(object: Any?, userInfo: [AnyHashable: Any]?)
+AppNotification.signIn.removeObserver(observer: Any, object: Any?)
+```
+
 > General
 ```swift
 AppleDevice.getDeviceInfo()
@@ -88,16 +113,21 @@ AppleDevice.getDeviceInfo()
 
 
 ## Installation
+
 NibSwift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
+
 ```ruby
-pod 'NibSwift', :tag => '1.2.0', :git => 'https://github.com/Nahanwoong/NibSwift'
+pod 'NibSwift', :tag => '2.0.0', :git => 'https://github.com/nibdevn/NibSwift'
 ```
 ## Example
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## License
+
 These works are available under the MIT license. See the [LICENSE][license] file
 for more info.
+
 
 [license]: LICENSE

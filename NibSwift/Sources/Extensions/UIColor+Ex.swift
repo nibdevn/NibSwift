@@ -10,5 +10,12 @@ extension UIColor {
         let b = CGFloat(Int(v[4] + v[5], radix: 16) ?? 0) / 255.0
         self.init(red: r, green: g, blue: b, alpha: min(max(alpha, 0), 1))
     }
+    
+    convenience init(hexInt: Int, alpha: CGFloat = 1.0) {
+        self.init(red:   CGFloat((hexInt >> 16) & 0xFF) / 255.0,
+                  green: CGFloat((hexInt >> 8) & 0xFF) / 255.0,
+                  blue:  CGFloat((hexInt) & 0xFF) / 255.0,
+                  alpha: 255.0 * alpha / 255.0)
+    }
 }
 

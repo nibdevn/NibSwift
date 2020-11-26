@@ -7,37 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		009DB3DDA0829501D13D06746196B638 /* AppColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2134F91737543584A0FCE52303AD9 /* AppColorProtocol.swift */; };
-		00B5414A797A45C6F33E27A423717653 /* AppleDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F1BE1A1BC7DF14750E7A4E69ADD8C /* AppleDevice.swift */; };
-		01E4557537C061368967BBF67CAF5C0E /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B40FF606696E19479AA89A8E26488 /* Date+Ex.swift */; };
-		04BA5B349C83AE2FDA42EA8A4A9EC7FF /* AppFontProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805024BC021CF68432A249F0E54B656A /* AppFontProtocol.swift */; };
-		0B588C9FDD34807DDF335A3BD7F0D7DA /* UITableViewCell+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01439E73ABF274F88B2F64F6A4378C8 /* UITableViewCell+Ex.swift */; };
-		1520877900960F1EA48408B9C33ECD73 /* Formatter+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B383D3739B6BB7E42DCAE58CABC565 /* Formatter+Ex.swift */; };
-		1A174E91F0232632392C33E8F31E0D46 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E6767C3E13F972E87F878079DB497 /* UIImage+Ex.swift */; };
-		1D7F0AEE63A16711FD2DCE29F38802E2 /* CGRect+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A323CC388C30D2418A60B32A1B77C85 /* CGRect+Ex.swift */; };
+		039AA2C5B08618CA862EB0610F05883C /* UICollectionViewCell+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35C287FF6783859A312ADB67152127 /* UICollectionViewCell+Ex.swift */; };
+		182E106EA60F5C75053FF5C67A14A391 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03385C268EE5A904E6E9CD3D01A3809D /* Date+Ex.swift */; };
+		22326E097FD69D64080D965032D31869 /* AppColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC55533A9331FA56F552F8B59A73F60 /* AppColorProtocol.swift */; };
 		2287D61B2B877BFB0C87FA14AA697BC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		25649428C1C42CBC2BBB95E55AFA012E /* UIFont+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1348E376D4DF5D3FCEE0E203FCD9B205 /* UIFont+Ex.swift */; };
-		295539F61AAEA81F4944B21F2EC903D8 /* NSAttributedString+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A00D5F1DC541F730F07942C8C52ADE /* NSAttributedString+Ex.swift */; };
+		26F672CD09788AAC4C72281C03AB644D /* UITableViewCell+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E543F0057CFA278849BABBB0A77DDFB /* UITableViewCell+Ex.swift */; };
+		2D93AD10CB7A8E52D9364E3E72769267 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35378633DFE631EFCA7EA63C124FCAD /* String+Ex.swift */; };
+		310AE5610262F0683B9AD9BD22398479 /* Formatter+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830CEA9FBA93713ED5FF208D0AB34680 /* Formatter+Ex.swift */; };
+		3714B646612E7EA09F4560789DD4EE57 /* Optional+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B707BBE8987144C31164C551030149D4 /* Optional+Ex.swift */; };
+		39A04BF3C6BDF9F1945EEDB1D34C6F11 /* NSAttributedString+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC34B4E937EC644F530609C90775B62 /* NSAttributedString+Ex.swift */; };
+		3F7CF5F4F50D49EDA21776A023EBAE62 /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6202E8E8E7B2BD5DB45945483FEFC10B /* UIColor+Ex.swift */; };
 		4CBD1C5A95C3A6D7CDD6BEF4349C6B7F /* Pods-NibSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD9A5D5B3359BB2F25D0D0D0C2AFC2 /* Pods-NibSwift_Example-dummy.m */; };
-		4F48F23EA6ED24784629A5F1815DFF02 /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A2B2DE7841005495DB78295BA14E7 /* UIColor+Ex.swift */; };
+		4F93E9DD873143E6A74D7BA0D6B1985B /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357E188F600DFEC6767751959D97C0B /* UIViewController+Ex.swift */; };
+		50DAE0BE37C99B2045A6C897BB0AA96E /* UIScrollView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E6D1AF030E8CB7ABF86B71ABC32167 /* UIScrollView+Ex.swift */; };
 		534AA4E4F98F3120D9B2E144087A804B /* Pods-NibSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F32BB5F0901105881B64C148096BAD /* Pods-NibSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5712691823054EC5ED8939A7F1BFC2C3 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01782ACF4F4EF8A04D33485E323FF272 /* String+Ex.swift */; };
-		667E5B13C92837E7683B462CEF059539 /* UILabel+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CADC06BE72C3C5FC8FEE7CA5255C66 /* UILabel+ex.swift */; };
-		6ADA5457A1ACAA7490C037299332CE24 /* UICollectionViewCell+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4927114C115C42EB615C3D8DD252C93 /* UICollectionViewCell+Ex.swift */; };
-		6B8CB4F63C11B973031264C8D55550FD /* NibSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12BED8B1F1D6726F719E907038D2DF3A /* NibSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77E567F2FD973D22A769347939E9FC31 /* Optional+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D211C9E4513C1387437385C8BCD5A /* Optional+Ex.swift */; };
-		79D3215F5B94489DE8C95575782CF52D /* Int+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2C85363D94F1A22ABF49FACC481915 /* Int+Ex.swift */; };
-		7A3708E882D51DE7791DA608D473BFB0 /* UIScrollView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948088B38FDE25F79CE572C6DFAA9327 /* UIScrollView+Ex.swift */; };
-		8AC99265C79E880F31A9256B8A9E1E9D /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3216F21C956E2970EBA3A22FCD8C92FE /* Array+Ex.swift */; };
-		93E7366ECCE33C1C0F7CDFE82BCB0E76 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82EB95185B20163A6CD11FF8015E6AC /* UIViewController+Ex.swift */; };
-		B02B4B5186BE093CDCAEF73D3F361AB7 /* UIWindow+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30955C5DC06CA2C5C9C52CD1D71A0F9 /* UIWindow+Ex.swift */; };
-		C3664E8DD5E4549FC5DE52D6E4026542 /* NibSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AE3A377E43B906B52CEEB8A69B7B59 /* NibSwift-dummy.m */; };
-		D25091E9B74813B5DF8B2930214D801D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		FF89C5E8971CD5BC36B2E32A27BA0866 /* UIApplication+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE073FD333FB78440081E931B4FA6E0 /* UIApplication+Ex.swift */; };
+		6472A4A07ED55DD469151BF8EDD0D391 /* NibSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5011C2CA4093CDED81195EC4D8A23421 /* NibSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AEF1FD40E19920DB0AF0A605A810A42 /* AppFontProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3809B00951FE3568541C2F462E8A6730 /* AppFontProtocol.swift */; };
+		80A610A4C5C63FC65FAD1AD7AFCAD6A5 /* UILabel+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679D948AB6014681C11D9AA165E5ED5 /* UILabel+ex.swift */; };
+		80BA52BCA2FDAB8D1661DBF69F9FD5FC /* Int+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87323E863B76BB910BBC92D83E92064B /* Int+Ex.swift */; };
+		88492A10EC5224BA8BD0E5C5C3CE502C /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A477952BCEC16D491A5FB72056C9C /* Array+Ex.swift */; };
+		8EAAF2FFEE21B9A706F8AED5BABEC263 /* UIFont+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA2FBE1615E46F22BCF6C1717AF822 /* UIFont+Ex.swift */; };
+		95321050322BFC3F651DD3F4D683C2D2 /* NibSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0B21867A039DE8181E2716E55FBDC9 /* NibSwift-dummy.m */; };
+		97AA08FDD973FE113F63CDB4370CDAA5 /* UIWindow+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454695C897F222C59BD0A15F60546EBF /* UIWindow+Ex.swift */; };
+		A54678625CBCB1855CF1563C939360B4 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE3E0C657F12DB19A2DE788F3710F3 /* UIImage+Ex.swift */; };
+		AC580C93065D91F8E6CA0352364A7E2B /* UIApplication+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E263BD057771BC85D555D590EA82BE /* UIApplication+Ex.swift */; };
+		BA3460E0546716C904F334B12AED8FF0 /* AppleDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C05D9C64025BAE1303A126504BC35 /* AppleDevice.swift */; };
+		C75250FA6C55F620CE0DF2F2E3892A01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F4E2E7A443FCD75B1334F8B45629A47A /* AppNotificationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87FB840011F67F036776297FFAC97E8 /* AppNotificationProtocol.swift */; };
+		F6E3C58515A43AA983B781A9C92A2AA1 /* CGRect+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1400AEC5B9462B097D0807475BA2F859 /* CGRect+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		371D386AC75EB3AE02B70C1A18F8B338 /* PBXContainerItemProxy */ = {
+		D6E983167F9A36BD14ED8057A9868FAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -47,58 +48,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01782ACF4F4EF8A04D33485E323FF272 /* String+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
-		04B383D3739B6BB7E42DCAE58CABC565 /* Formatter+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Formatter+Ex.swift"; sourceTree = "<group>"; };
-		12BED8B1F1D6726F719E907038D2DF3A /* NibSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NibSwift-umbrella.h"; sourceTree = "<group>"; };
-		1348E376D4DF5D3FCEE0E203FCD9B205 /* UIFont+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
+		012A477952BCEC16D491A5FB72056C9C /* Array+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
+		03385C268EE5A904E6E9CD3D01A3809D /* Date+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
+		0DA772D759CB364D117421F9F0E0EB85 /* NibSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NibSwift.debug.xcconfig; sourceTree = "<group>"; };
+		1400AEC5B9462B097D0807475BA2F859 /* CGRect+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Ex.swift"; sourceTree = "<group>"; };
 		14CD9A5D5B3359BB2F25D0D0D0C2AFC2 /* Pods-NibSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NibSwift_Example-dummy.m"; sourceTree = "<group>"; };
-		26A00D5F1DC541F730F07942C8C52ADE /* NSAttributedString+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ex.swift"; sourceTree = "<group>"; };
+		1CC55533A9331FA56F552F8B59A73F60 /* AppColorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppColorProtocol.swift; sourceTree = "<group>"; };
+		2AC34B4E937EC644F530609C90775B62 /* NSAttributedString+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ex.swift"; sourceTree = "<group>"; };
 		2FCD2A2950B4832732A6294BEA84AE57 /* Pods_NibSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NibSwift_Example.framework; path = "Pods-NibSwift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3216F21C956E2970EBA3A22FCD8C92FE /* Array+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
-		35B7F0CC1E57A4A5074C2D4F87E03C6A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		37900AB0A1E5D15FD30855F651FDE3E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3809B00951FE3568541C2F462E8A6730 /* AppFontProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppFontProtocol.swift; sourceTree = "<group>"; };
+		3ACE80FD5712195209C62F1C35BFB939 /* NibSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NibSwift-prefix.pch"; sourceTree = "<group>"; };
+		408C05D9C64025BAE1303A126504BC35 /* AppleDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleDevice.swift; path = NibSwift/Sources/AppleDevice.swift; sourceTree = "<group>"; };
 		40F32BB5F0901105881B64C148096BAD /* Pods-NibSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NibSwift_Example-umbrella.h"; sourceTree = "<group>"; };
+		454695C897F222C59BD0A15F60546EBF /* UIWindow+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIWindow+Ex.swift"; sourceTree = "<group>"; };
 		49D30F125A6EFCFA6BDB388CF3774433 /* Pods-NibSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NibSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B4F1217502EC6D3DC292AB2FE492FB4 /* NibSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NibSwift.modulemap; sourceTree = "<group>"; };
+		4E543F0057CFA278849BABBB0A77DDFB /* UITableViewCell+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ex.swift"; sourceTree = "<group>"; };
+		5011C2CA4093CDED81195EC4D8A23421 /* NibSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NibSwift-umbrella.h"; sourceTree = "<group>"; };
+		58F55C3E5A94255438990FE7A62BDEE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		60A67615D775883D7917248087ED2309 /* Pods-NibSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NibSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		62D2134F91737543584A0FCE52303AD9 /* AppColorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppColorProtocol.swift; sourceTree = "<group>"; };
-		664A2B2DE7841005495DB78295BA14E7 /* UIColor+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
-		6A323CC388C30D2418A60B32A1B77C85 /* CGRect+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+Ex.swift"; sourceTree = "<group>"; };
+		6202E8E8E7B2BD5DB45945483FEFC10B /* UIColor+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
+		6357E188F600DFEC6767751959D97C0B /* UIViewController+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		6D06201B1173B854E6EA10DF2D7CC889 /* NibSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NibSwift.framework; path = NibSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DE073FD333FB78440081E931B4FA6E0 /* UIApplication+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ex.swift"; sourceTree = "<group>"; };
-		71535F5333DF44FBA873CB3F3DDBB891 /* NibSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NibSwift-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7E2C85363D94F1A22ABF49FACC481915 /* Int+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Int+Ex.swift"; sourceTree = "<group>"; };
-		805024BC021CF68432A249F0E54B656A /* AppFontProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppFontProtocol.swift; sourceTree = "<group>"; };
-		948088B38FDE25F79CE572C6DFAA9327 /* UIScrollView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ex.swift"; sourceTree = "<group>"; };
-		962F1BE1A1BC7DF14750E7A4E69ADD8C /* AppleDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleDevice.swift; path = NibSwift/Sources/AppleDevice.swift; sourceTree = "<group>"; };
-		9D4D211C9E4513C1387437385C8BCD5A /* Optional+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Optional+Ex.swift"; sourceTree = "<group>"; };
+		830CEA9FBA93713ED5FF208D0AB34680 /* Formatter+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Formatter+Ex.swift"; sourceTree = "<group>"; };
+		84AA2FBE1615E46F22BCF6C1717AF822 /* UIFont+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
+		87323E863B76BB910BBC92D83E92064B /* Int+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Int+Ex.swift"; sourceTree = "<group>"; };
+		8EAE3E0C657F12DB19A2DE788F3710F3 /* UIImage+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
+		9679D948AB6014681C11D9AA165E5ED5 /* UILabel+ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+ex.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4CADC06BE72C3C5FC8FEE7CA5255C66 /* UILabel+ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+ex.swift"; sourceTree = "<group>"; };
-		A53B40FF606696E19479AA89A8E26488 /* Date+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
-		B82EB95185B20163A6CD11FF8015E6AC /* UIViewController+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		A4CD577D11F7FEC0FDD2CFA4BC1B2348 /* NibSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NibSwift.release.xcconfig; sourceTree = "<group>"; };
+		B707BBE8987144C31164C551030149D4 /* Optional+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Optional+Ex.swift"; sourceTree = "<group>"; };
 		BDCF7E3AD44411866EBD1E026A098949 /* Pods-NibSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NibSwift_Example-Info.plist"; sourceTree = "<group>"; };
-		BF0C6670F5DA58F352E6D3A97B3363EC /* NibSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NibSwift.release.xcconfig; sourceTree = "<group>"; };
-		C15A96315246AA6DD5877730B1DD7706 /* NibSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NibSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE0B21867A039DE8181E2716E55FBDC9 /* NibSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NibSwift-dummy.m"; sourceTree = "<group>"; };
 		C21695E6B9548809DC93406BB8F926F8 /* Pods-NibSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NibSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D0AE3A377E43B906B52CEEB8A69B7B59 /* NibSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NibSwift-dummy.m"; sourceTree = "<group>"; };
-		D737E2C955911CF60EE640B6420DC5D2 /* NibSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NibSwift-prefix.pch"; sourceTree = "<group>"; };
-		D8F576CAD90C295E679464658BF69823 /* NibSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NibSwift.debug.xcconfig; sourceTree = "<group>"; };
-		DA2E6767C3E13F972E87F878079DB497 /* UIImage+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
+		C7E263BD057771BC85D555D590EA82BE /* UIApplication+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ex.swift"; sourceTree = "<group>"; };
+		C8E6D1AF030E8CB7ABF86B71ABC32167 /* UIScrollView+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ex.swift"; sourceTree = "<group>"; };
+		CD35C287FF6783859A312ADB67152127 /* UICollectionViewCell+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Ex.swift"; sourceTree = "<group>"; };
+		D35378633DFE631EFCA7EA63C124FCAD /* String+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		DE0EBC30DC63ACB1798344A52FF538AF /* Pods-NibSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NibSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DE44CF9B43201C6B80768EB0D5F0A46A /* NibSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NibSwift.modulemap; sourceTree = "<group>"; };
-		E01439E73ABF274F88B2F64F6A4378C8 /* UITableViewCell+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ex.swift"; sourceTree = "<group>"; };
+		E4043DF542CC752308E13DF9ED22774F /* NibSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NibSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E752615B8B3328081B3A8E93E7C552C1 /* Pods-NibSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NibSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		ED26F469301481F82DA84794DA5A91F9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		EE7E0C6F57F5D73872EF2877F4B6A92B /* Pods-NibSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NibSwift_Example.modulemap"; sourceTree = "<group>"; };
-		F30955C5DC06CA2C5C9C52CD1D71A0F9 /* UIWindow+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIWindow+Ex.swift"; sourceTree = "<group>"; };
-		F4927114C115C42EB615C3D8DD252C93 /* UICollectionViewCell+Ex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Ex.swift"; sourceTree = "<group>"; };
+		F87FB840011F67F036776297FFAC97E8 /* AppNotificationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppNotificationProtocol.swift; sourceTree = "<group>"; };
+		FA5F7F703BF7FDFC3602577F04D51499 /* NibSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NibSwift-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		175278EC4D6EA1EEEC8C2E1B8CC219D2 /* Frameworks */ = {
+		25699552CDD0411175614388CC213705 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D25091E9B74813B5DF8B2930214D801D /* Foundation.framework in Frameworks */,
+				C75250FA6C55F620CE0DF2F2E3892A01 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,30 +115,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D6C29DB61A39C22EAD86FD86CAB2D50 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				62D2134F91737543584A0FCE52303AD9 /* AppColorProtocol.swift */,
-				805024BC021CF68432A249F0E54B656A /* AppFontProtocol.swift */,
-			);
-			name = Protocols;
-			path = NibSwift/Sources/Protocols;
-			sourceTree = "<group>";
-		};
-		15561E96E7D2691268D64C7B4C5FE37B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				37900AB0A1E5D15FD30855F651FDE3E5 /* LICENSE */,
-				C15A96315246AA6DD5877730B1DD7706 /* NibSwift.podspec */,
-				35B7F0CC1E57A4A5074C2D4F87E03C6A /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		2F1E310BCC8C7D12ABF5C66D705E1434 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9B482A0912CC60265859219CA5DD21A4 /* NibSwift */,
+				B51F54A3709ED8DE5FB1021F30F6E8CB /* NibSwift */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -149,30 +131,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5FA36C1DB29A771708650305857C8A5A /* Extensions */ = {
+		64343C3697DF437E223F88050846C4B1 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3216F21C956E2970EBA3A22FCD8C92FE /* Array+Ex.swift */,
-				6A323CC388C30D2418A60B32A1B77C85 /* CGRect+Ex.swift */,
-				A53B40FF606696E19479AA89A8E26488 /* Date+Ex.swift */,
-				04B383D3739B6BB7E42DCAE58CABC565 /* Formatter+Ex.swift */,
-				7E2C85363D94F1A22ABF49FACC481915 /* Int+Ex.swift */,
-				26A00D5F1DC541F730F07942C8C52ADE /* NSAttributedString+Ex.swift */,
-				9D4D211C9E4513C1387437385C8BCD5A /* Optional+Ex.swift */,
-				01782ACF4F4EF8A04D33485E323FF272 /* String+Ex.swift */,
-				6DE073FD333FB78440081E931B4FA6E0 /* UIApplication+Ex.swift */,
-				F4927114C115C42EB615C3D8DD252C93 /* UICollectionViewCell+Ex.swift */,
-				664A2B2DE7841005495DB78295BA14E7 /* UIColor+Ex.swift */,
-				1348E376D4DF5D3FCEE0E203FCD9B205 /* UIFont+Ex.swift */,
-				DA2E6767C3E13F972E87F878079DB497 /* UIImage+Ex.swift */,
-				A4CADC06BE72C3C5FC8FEE7CA5255C66 /* UILabel+ex.swift */,
-				948088B38FDE25F79CE572C6DFAA9327 /* UIScrollView+Ex.swift */,
-				E01439E73ABF274F88B2F64F6A4378C8 /* UITableViewCell+Ex.swift */,
-				B82EB95185B20163A6CD11FF8015E6AC /* UIViewController+Ex.swift */,
-				F30955C5DC06CA2C5C9C52CD1D71A0F9 /* UIWindow+Ex.swift */,
+				1CC55533A9331FA56F552F8B59A73F60 /* AppColorProtocol.swift */,
+				3809B00951FE3568541C2F462E8A6730 /* AppFontProtocol.swift */,
+				F87FB840011F67F036776297FFAC97E8 /* AppNotificationProtocol.swift */,
 			);
-			name = Extensions;
-			path = NibSwift/Sources/Extensions;
+			name = Protocols;
+			path = NibSwift/Sources/Protocols;
 			sourceTree = "<group>";
 		};
 		65BB6340CE5D77B498F6E705C058619E /* Targets Support Files */ = {
@@ -183,32 +150,27 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9B482A0912CC60265859219CA5DD21A4 /* NibSwift */ = {
+		739265AE4DEBA600CBC097CE4195E89C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				962F1BE1A1BC7DF14750E7A4E69ADD8C /* AppleDevice.swift */,
-				5FA36C1DB29A771708650305857C8A5A /* Extensions */,
-				15561E96E7D2691268D64C7B4C5FE37B /* Pod */,
-				0D6C29DB61A39C22EAD86FD86CAB2D50 /* Protocols */,
-				AA93B72FEBCEC03573C94CF8D08B89FA /* Support Files */,
+				ED26F469301481F82DA84794DA5A91F9 /* LICENSE */,
+				E4043DF542CC752308E13DF9ED22774F /* NibSwift.podspec */,
+				58F55C3E5A94255438990FE7A62BDEE9 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B51F54A3709ED8DE5FB1021F30F6E8CB /* NibSwift */ = {
+			isa = PBXGroup;
+			children = (
+				408C05D9C64025BAE1303A126504BC35 /* AppleDevice.swift */,
+				E970046EAE3566D4E5B5DD9FB8DE8687 /* Extensions */,
+				739265AE4DEBA600CBC097CE4195E89C /* Pod */,
+				64343C3697DF437E223F88050846C4B1 /* Protocols */,
+				D65A9851FD1F30BD3BD78DCB3FACFA78 /* Support Files */,
 			);
 			name = NibSwift;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		AA93B72FEBCEC03573C94CF8D08B89FA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DE44CF9B43201C6B80768EB0D5F0A46A /* NibSwift.modulemap */,
-				D0AE3A377E43B906B52CEEB8A69B7B59 /* NibSwift-dummy.m */,
-				71535F5333DF44FBA873CB3F3DDBB891 /* NibSwift-Info.plist */,
-				D737E2C955911CF60EE640B6420DC5D2 /* NibSwift-prefix.pch */,
-				12BED8B1F1D6726F719E907038D2DF3A /* NibSwift-umbrella.h */,
-				D8F576CAD90C295E679464658BF69823 /* NibSwift.debug.xcconfig */,
-				BF0C6670F5DA58F352E6D3A97B3363EC /* NibSwift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/NibSwift";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -230,6 +192,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D65A9851FD1F30BD3BD78DCB3FACFA78 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B4F1217502EC6D3DC292AB2FE492FB4 /* NibSwift.modulemap */,
+				BE0B21867A039DE8181E2716E55FBDC9 /* NibSwift-dummy.m */,
+				FA5F7F703BF7FDFC3602577F04D51499 /* NibSwift-Info.plist */,
+				3ACE80FD5712195209C62F1C35BFB939 /* NibSwift-prefix.pch */,
+				5011C2CA4093CDED81195EC4D8A23421 /* NibSwift-umbrella.h */,
+				0DA772D759CB364D117421F9F0E0EB85 /* NibSwift.debug.xcconfig */,
+				A4CD577D11F7FEC0FDD2CFA4BC1B2348 /* NibSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NibSwift";
+			sourceTree = "<group>";
+		};
 		E09B34F9D698A22DFBA2D69CF3E4960C /* Pods-NibSwift_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +224,32 @@
 			path = "Target Support Files/Pods-NibSwift_Example";
 			sourceTree = "<group>";
 		};
+		E970046EAE3566D4E5B5DD9FB8DE8687 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				012A477952BCEC16D491A5FB72056C9C /* Array+Ex.swift */,
+				1400AEC5B9462B097D0807475BA2F859 /* CGRect+Ex.swift */,
+				03385C268EE5A904E6E9CD3D01A3809D /* Date+Ex.swift */,
+				830CEA9FBA93713ED5FF208D0AB34680 /* Formatter+Ex.swift */,
+				87323E863B76BB910BBC92D83E92064B /* Int+Ex.swift */,
+				2AC34B4E937EC644F530609C90775B62 /* NSAttributedString+Ex.swift */,
+				B707BBE8987144C31164C551030149D4 /* Optional+Ex.swift */,
+				D35378633DFE631EFCA7EA63C124FCAD /* String+Ex.swift */,
+				C7E263BD057771BC85D555D590EA82BE /* UIApplication+Ex.swift */,
+				CD35C287FF6783859A312ADB67152127 /* UICollectionViewCell+Ex.swift */,
+				6202E8E8E7B2BD5DB45945483FEFC10B /* UIColor+Ex.swift */,
+				84AA2FBE1615E46F22BCF6C1717AF822 /* UIFont+Ex.swift */,
+				8EAE3E0C657F12DB19A2DE788F3710F3 /* UIImage+Ex.swift */,
+				9679D948AB6014681C11D9AA165E5ED5 /* UILabel+ex.swift */,
+				C8E6D1AF030E8CB7ABF86B71ABC32167 /* UIScrollView+Ex.swift */,
+				4E543F0057CFA278849BABBB0A77DDFB /* UITableViewCell+Ex.swift */,
+				6357E188F600DFEC6767751959D97C0B /* UIViewController+Ex.swift */,
+				454695C897F222C59BD0A15F60546EBF /* UIWindow+Ex.swift */,
+			);
+			name = Extensions;
+			path = NibSwift/Sources/Extensions;
+			sourceTree = "<group>";
+		};
 		F90CE10BC5817A2968CCB1501FAE2A29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,11 +262,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9426B2FB8DC95032C61257FB5DAD0E8A /* Headers */ = {
+		7289CD67CA577833C45229087389E712 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B8CB4F63C11B973031264C8D55550FD /* NibSwift-umbrella.h in Headers */,
+				6472A4A07ED55DD469151BF8EDD0D391 /* NibSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +293,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1EBAEC458243BCAD302563EEE8A92742 /* PBXTargetDependency */,
+				8988C1321071F3C8F0D9374FE9D384EF /* PBXTargetDependency */,
 			);
 			name = "Pods-NibSwift_Example";
 			productName = "Pods-NibSwift_Example";
@@ -299,12 +302,12 @@
 		};
 		F0B4609295D16EDA1A7B6180D403F3C7 /* NibSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61ABFF0A55E033EB4F3AEC5A878B3EB4 /* Build configuration list for PBXNativeTarget "NibSwift" */;
+			buildConfigurationList = 42E381EF4CB9DD39664FEA11F6E94559 /* Build configuration list for PBXNativeTarget "NibSwift" */;
 			buildPhases = (
-				9426B2FB8DC95032C61257FB5DAD0E8A /* Headers */,
-				AB8BF563A328B733546DEB3F80F7F2C4 /* Sources */,
-				175278EC4D6EA1EEEC8C2E1B8CC219D2 /* Frameworks */,
-				624BBC692DE6FF46A0998291738C4939 /* Resources */,
+				7289CD67CA577833C45229087389E712 /* Headers */,
+				CF4E93425BCC0411055743382889AEBF /* Sources */,
+				25699552CDD0411175614388CC213705 /* Frameworks */,
+				2CB90585D8CEE0F8BCE6200733A5D327 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -344,7 +347,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		624BBC692DE6FF46A0998291738C4939 /* Resources */ = {
+		2CB90585D8CEE0F8BCE6200733A5D327 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,48 +372,177 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB8BF563A328B733546DEB3F80F7F2C4 /* Sources */ = {
+		CF4E93425BCC0411055743382889AEBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009DB3DDA0829501D13D06746196B638 /* AppColorProtocol.swift in Sources */,
-				04BA5B349C83AE2FDA42EA8A4A9EC7FF /* AppFontProtocol.swift in Sources */,
-				00B5414A797A45C6F33E27A423717653 /* AppleDevice.swift in Sources */,
-				8AC99265C79E880F31A9256B8A9E1E9D /* Array+Ex.swift in Sources */,
-				1D7F0AEE63A16711FD2DCE29F38802E2 /* CGRect+Ex.swift in Sources */,
-				01E4557537C061368967BBF67CAF5C0E /* Date+Ex.swift in Sources */,
-				1520877900960F1EA48408B9C33ECD73 /* Formatter+Ex.swift in Sources */,
-				79D3215F5B94489DE8C95575782CF52D /* Int+Ex.swift in Sources */,
-				C3664E8DD5E4549FC5DE52D6E4026542 /* NibSwift-dummy.m in Sources */,
-				295539F61AAEA81F4944B21F2EC903D8 /* NSAttributedString+Ex.swift in Sources */,
-				77E567F2FD973D22A769347939E9FC31 /* Optional+Ex.swift in Sources */,
-				5712691823054EC5ED8939A7F1BFC2C3 /* String+Ex.swift in Sources */,
-				FF89C5E8971CD5BC36B2E32A27BA0866 /* UIApplication+Ex.swift in Sources */,
-				6ADA5457A1ACAA7490C037299332CE24 /* UICollectionViewCell+Ex.swift in Sources */,
-				4F48F23EA6ED24784629A5F1815DFF02 /* UIColor+Ex.swift in Sources */,
-				25649428C1C42CBC2BBB95E55AFA012E /* UIFont+Ex.swift in Sources */,
-				1A174E91F0232632392C33E8F31E0D46 /* UIImage+Ex.swift in Sources */,
-				667E5B13C92837E7683B462CEF059539 /* UILabel+ex.swift in Sources */,
-				7A3708E882D51DE7791DA608D473BFB0 /* UIScrollView+Ex.swift in Sources */,
-				0B588C9FDD34807DDF335A3BD7F0D7DA /* UITableViewCell+Ex.swift in Sources */,
-				93E7366ECCE33C1C0F7CDFE82BCB0E76 /* UIViewController+Ex.swift in Sources */,
-				B02B4B5186BE093CDCAEF73D3F361AB7 /* UIWindow+Ex.swift in Sources */,
+				22326E097FD69D64080D965032D31869 /* AppColorProtocol.swift in Sources */,
+				6AEF1FD40E19920DB0AF0A605A810A42 /* AppFontProtocol.swift in Sources */,
+				BA3460E0546716C904F334B12AED8FF0 /* AppleDevice.swift in Sources */,
+				F4E2E7A443FCD75B1334F8B45629A47A /* AppNotificationProtocol.swift in Sources */,
+				88492A10EC5224BA8BD0E5C5C3CE502C /* Array+Ex.swift in Sources */,
+				F6E3C58515A43AA983B781A9C92A2AA1 /* CGRect+Ex.swift in Sources */,
+				182E106EA60F5C75053FF5C67A14A391 /* Date+Ex.swift in Sources */,
+				310AE5610262F0683B9AD9BD22398479 /* Formatter+Ex.swift in Sources */,
+				80BA52BCA2FDAB8D1661DBF69F9FD5FC /* Int+Ex.swift in Sources */,
+				95321050322BFC3F651DD3F4D683C2D2 /* NibSwift-dummy.m in Sources */,
+				39A04BF3C6BDF9F1945EEDB1D34C6F11 /* NSAttributedString+Ex.swift in Sources */,
+				3714B646612E7EA09F4560789DD4EE57 /* Optional+Ex.swift in Sources */,
+				2D93AD10CB7A8E52D9364E3E72769267 /* String+Ex.swift in Sources */,
+				AC580C93065D91F8E6CA0352364A7E2B /* UIApplication+Ex.swift in Sources */,
+				039AA2C5B08618CA862EB0610F05883C /* UICollectionViewCell+Ex.swift in Sources */,
+				3F7CF5F4F50D49EDA21776A023EBAE62 /* UIColor+Ex.swift in Sources */,
+				8EAAF2FFEE21B9A706F8AED5BABEC263 /* UIFont+Ex.swift in Sources */,
+				A54678625CBCB1855CF1563C939360B4 /* UIImage+Ex.swift in Sources */,
+				80A610A4C5C63FC65FAD1AD7AFCAD6A5 /* UILabel+ex.swift in Sources */,
+				50DAE0BE37C99B2045A6C897BB0AA96E /* UIScrollView+Ex.swift in Sources */,
+				26F672CD09788AAC4C72281C03AB644D /* UITableViewCell+Ex.swift in Sources */,
+				4F93E9DD873143E6A74D7BA0D6B1985B /* UIViewController+Ex.swift in Sources */,
+				97AA08FDD973FE113F63CDB4370CDAA5 /* UIWindow+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1EBAEC458243BCAD302563EEE8A92742 /* PBXTargetDependency */ = {
+		8988C1321071F3C8F0D9374FE9D384EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NibSwift;
 			target = F0B4609295D16EDA1A7B6180D403F3C7 /* NibSwift */;
-			targetProxy = 371D386AC75EB3AE02B70C1A18F8B338 /* PBXContainerItemProxy */;
+			targetProxy = D6E983167F9A36BD14ED8057A9868FAA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+		0FC0EEBEE25ACC5E323F9DFC1CD4282E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4CD577D11F7FEC0FDD2CFA4BC1B2348 /* NibSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NibSwift/NibSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NibSwift/NibSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NibSwift/NibSwift.modulemap";
+				PRODUCT_MODULE_NAME = NibSwift;
+				PRODUCT_NAME = NibSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1174CB54DEE210BA45379850657241A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E752615B8B3328081B3A8E93E7C552C1 /* Pods-NibSwift_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NibSwift_Example/Pods-NibSwift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NibSwift_Example/Pods-NibSwift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -463,7 +595,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -476,10 +608,11 @@
 			};
 			name = Debug;
 		};
-		5C807AA6BCC18B1B5A7E7C712114E0B9 /* Release */ = {
+		D35DEF19BE4399866F734F413C75C0EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF0C6670F5DA58F352E6D3A97B3363EC /* NibSwift.release.xcconfig */;
+			baseConfigurationReference = 0DA772D759CB364D117421F9F0E0EB85 /* NibSwift.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -491,38 +624,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NibSwift/NibSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NibSwift/NibSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NibSwift/NibSwift.modulemap";
-				PRODUCT_MODULE_NAME = NibSwift;
-				PRODUCT_NAME = NibSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6642CDC439F63E230990D9998F14E4C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8F576CAD90C295E679464658BF69823 /* NibSwift.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NibSwift/NibSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NibSwift/NibSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NibSwift/NibSwift.modulemap";
 				PRODUCT_MODULE_NAME = NibSwift;
@@ -537,106 +639,12 @@
 			};
 			name = Debug;
 		};
-		C6A2CF11240084962090A9FC3AF202B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E752615B8B3328081B3A8E93E7C552C1 /* Pods-NibSwift_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NibSwift_Example/Pods-NibSwift_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NibSwift_Example/Pods-NibSwift_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		E87B7BF2783881D7DEA38285A968DE5D /* Debug */ = {
+		FE846DA54F6EA264E72739985DFFD8E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE0EBC30DC63ACB1798344A52FF538AF /* Pods-NibSwift_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -647,7 +655,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-NibSwift_Example/Pods-NibSwift_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NibSwift_Example/Pods-NibSwift_Example.modulemap";
@@ -670,8 +678,17 @@
 		31002A1C15946D5B58F7CE6BB2C7745B /* Build configuration list for PBXNativeTarget "Pods-NibSwift_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E87B7BF2783881D7DEA38285A968DE5D /* Debug */,
-				C6A2CF11240084962090A9FC3AF202B8 /* Release */,
+				FE846DA54F6EA264E72739985DFFD8E3 /* Debug */,
+				1174CB54DEE210BA45379850657241A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42E381EF4CB9DD39664FEA11F6E94559 /* Build configuration list for PBXNativeTarget "NibSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35DEF19BE4399866F734F413C75C0EE /* Debug */,
+				0FC0EEBEE25ACC5E323F9DFC1CD4282E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -679,17 +696,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
-				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		61ABFF0A55E033EB4F3AEC5A878B3EB4 /* Build configuration list for PBXNativeTarget "NibSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6642CDC439F63E230990D9998F14E4C1 /* Debug */,
-				5C807AA6BCC18B1B5A7E7C712114E0B9 /* Release */,
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

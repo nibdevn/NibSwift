@@ -3,11 +3,9 @@ import UIKit
 
 extension UICollectionView {
     
-    func setBackgroundColor(_ color: UIColor) {
+    public func setBackgroundColor(_ color: UIColor) {
         let view = UIView()
         view.backgroundColor = color
         self.backgroundView = view
     }
 }
-
-
