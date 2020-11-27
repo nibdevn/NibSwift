@@ -93,8 +93,6 @@ AppFont.someFont3.font(size: 17)
 enum AppNotification: String, AppNotificationProtocol {
     
     case signIn = "signIn"
-    case signOut = "signOut"
-    case updateToken = "updateToken"
     
     public var name: String {
         return self.rawValue
@@ -118,7 +116,7 @@ NibSwift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NibSwift', :tag => '2.0.0', :git => 'https://github.com/nibdevn/NibSwift'
+pod 'NibSwift', :tag => '2.2.0', :git => 'https://github.com/nibdevn/NibSwift'
 ```
 ## Example
 

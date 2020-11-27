@@ -57,4 +57,12 @@ extension UIApplication {
     public static var safeArea: UIEdgeInsets {
         return UIWindow.keyWindow?.safeAreaInsets ?? .zero
     }
+    
+    public static var statusBarHeight: CGFloat {
+        if #available(iOS 13.0, *) {
+            return UIWindow.keyWindow?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+        } else {
+            return UIApplication.shared.statusBarFrame.height
+        }
+    }
 }
