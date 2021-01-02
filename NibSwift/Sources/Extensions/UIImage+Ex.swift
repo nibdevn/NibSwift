@@ -13,25 +13,9 @@ extension UIImage {
         self.init(cgImage: cgImage)
     }
     
-    public static func fromURL(url: URL) -> UIImage? {
-        do {
-            let data = try Data(contentsOf: url)
-            if let image = UIImage(data: data) { return image }
-            else { return nil }
-        }
-        catch _ {
-            return nil
-        }
-    }
-    
-    public static func fromURL(url: String) -> UIImage? {
-        if let url = URL(string: url) { return fromURL(url: url) }
-        else { return nil }
-    }
-    
-    public static func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage? {
-        let widthRatio  = targetSize.width  / image.size.width
-        let heightRatio = targetSize.height / image.size.height
+    public static func resize(image: UIImage, to size: CGSize) -> UIImage? {
+        let widthRatio  = size.width  / image.size.width
+        let heightRatio = size.height / image.size.height
         
         let newSize = widthRatio > heightRatio ?
             CGSize(width: image.size.width * heightRatio,height: image.size.height * heightRatio) :

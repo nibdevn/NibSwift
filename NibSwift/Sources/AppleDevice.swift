@@ -6,135 +6,167 @@ public enum AppleDeviceType {
     case iPod
     case iPad
     case watch
+    case tv
     case unknown
 }
 
-fileprivate let DeviceDictionary:[String : [String: AppleDeviceType]] = [
+fileprivate let DeviceDictionary:[String : (name: String, type: AppleDeviceType)] = [
     /* Simulator */
-    "i386"      :["Simulator": .simulator],
-    "x86_64"    :["Simulator": .simulator],
+    "i386"      : (name: "Simulator i386", type: .simulator),
+    "x86_64"    : (name: "Simulator x86_64", type: .simulator),
+    
+    /* Apple TV */
+    "AppleTV1,1" : (name: "Apple TV 1Gen", type: .tv),
+    "AppleTV2,1" : (name: "Apple TV 2Gen", type: .tv),
+    "AppleTV3,1" : (name: "Apple TV 3Gen", type: .tv),
+    "AppleTV3,2" : (name: "Apple TV 3Gen rev.2", type: .tv),
+    "AppleTV5,3" : (name: "Apple TV 4Gen", type: .tv),
+    "AppleTV6,2" : (name: "Apple TV 4K", type: .tv),
     
     /* iPhone */
-    "iPhone1,1"   :["iPhone 2G": .iPhone],
-    "iPhone1,2"   :["iPhone 3G": .iPhone],
-    "iPhone2,1"   :["iPhone 3GS": .iPhone],
-    "iPhone3,1"   :["iPhone 4": .iPhone],
-    "iPhone3,2"   :["iPhone 4": .iPhone],
-    "iPhone3,3"   :["iPhone 4": .iPhone],
-    "iPhone4,1"   :["iPhone 4S": .iPhone],
-    "iPhone5,1"   :["iPhone 5": .iPhone],
-    "iPhone5,2"   :["iPhone 5": .iPhone],
-    "iPhone5,3"   :["iPhone 5c": .iPhone],
-    "iPhone5,4"   :["iPhone 5c": .iPhone],
-    "iPhone6,1"   :["iPhone 5s": .iPhone],
-    "iPhone6,2"   :["iPhone 5s": .iPhone],
-    "iPhone7,1"   :["iPhone 6 Plus": .iPhone],
-    "iPhone7,2"   :["iPhone 6": .iPhone],
-    "iPhone8,1"   :["iPhone 6S": .iPhone],
-    "iPhone8,2"   :["iPhone 6S Plus": .iPhone],
-    "iPhone8,4"   :["iPhone SE": .iPhone],
-    "iPhone9,1"   :["iPhone 7": .iPhone],
-    "iPhone9,3"   :["iPhone 7": .iPhone],
-    "iPhone9,2"   :["iPhone 7 Plus": .iPhone],
-    "iPhone9,4"   :["iPhone 7 Plus": .iPhone],
-    "iPhone10,1"  :["iPhone 8": .iPhone],
-    "iPhone10,4"  :["iPhone 8": .iPhone],
-    "iPhone10,2"  :["iPhone 8 Plus": .iPhone],
-    "iPhone10,5"  :["iPhone 8 Plus": .iPhone],
-    "iPhone10,3"  :["iPhone X": .iPhone],
-    "iPhone10,6"  :["iPhone X": .iPhone],
-    "iPhone11,2"  :["iPhone XS": .iPhone],
-    "iPhone11,4"  :["iPhone XS Max": .iPhone],
-    "iPhone11,6"  :["iPhone XS Max": .iPhone],
-    "iPhone11,8"  :["iPhone XR": .iPhone],
-    "iPhone12,1"  :["iPhone 11": .iPhone],
-    "iPhone12,3"  :["iPhone 11 Pro": .iPhone],
-    "iPhone12,5"  :["iPhone 11 Pro Max": .iPhone],
-    
-    /* iPod */
-    "iPod1,1"   :["iPod Touch 1st": .iPod],
-    "iPod2,1"   :["iPod Touch 2nd": .iPod],
-    "iPod3,1"   :["iPod Touch 3rd": .iPod],
-    "iPod4,1"   :["iPod Touch 4th": .iPod],
-    "iPod5,1"   :["iPod Touch 5th": .iPod],
-    "iPod7,1"   :["iPod Touch 6th": .iPod],
-    "iPod9,1"   :["iPod Touch 7th": .iPod],
+    "iPhone1,1" : (name: "iPhone 2G", type: .iPhone),
+    "iPhone1,2" : (name: "iPhone 3G", type: .iPhone),
+    "iPhone2,1" : (name: "iPhone 3GS", type: .iPhone),
+    "iPhone3,1" : (name: "iPhone 4 GSM", type: .iPhone),
+    "iPhone3,2" : (name: "iPhone 4 GSM (2012)", type: .iPhone),
+    "iPhone4,1" : (name: "iPhone 4S", type: .iPhone),
+    "iPhone5,1" : (name: "iPhone 5 GSM", type: .iPhone),
+    "iPhone5,2" : (name: "iPhone 5 Global", type: .iPhone),
+    "iPhone5,3" : (name: "iPhone 5C GSM", type: .iPhone),
+    "iPhone5,4" : (name: "iPhone 5C Global", type: .iPhone),
+    "iPhone6,1" : (name: "iPhone 5S GSM", type: .iPhone),
+    "iPhone6,2" : (name: "iPhone 5S Global", type: .iPhone),
+    "iPhone7,1" : (name: "iPhone 6 Plus", type: .iPhone),
+    "iPhone7,2" : (name: "iPhone 6", type: .iPhone),
+    "iPhone8,1" : (name: "iPhone 6S", type: .iPhone),
+    "iPhone8,2" : (name: "iPhone 6S Plus", type: .iPhone),
+    "iPhone8,4" : (name: "iPhone SE GSM", type: .iPhone),
+    "iPhone9,1" : (name: "iPhone 7 Global", type: .iPhone),
+    "iPhone9,2" : (name: "iPhone 7 Plus Global", type: .iPhone),
+    "iPhone9,3" : (name: "iPhone 7 GSM", type: .iPhone),
+    "iPhone9,4" : (name: "iPhone 7 Plus GSM", type: .iPhone),
+    "iPhone10,1" : (name: "iPhone 8 Global", type: .iPhone),
+    "iPhone10,2" : (name: "iPhone 8 Plus Global", type: .iPhone),
+    "iPhone10,3" : (name: "iPhone X Global", type: .iPhone),
+    "iPhone10,4" : (name: "iPhone 8 GSM", type: .iPhone),
+    "iPhone10,5" : (name: "iPhone 8 Plus GSM", type: .iPhone),
+    "iPhone10,6" : (name: "iPhone X GSM", type: .iPhone),
+    "iPhone11,2" : (name: "iPhone XS", type: .iPhone),
+    "iPhone11,4" : (name: "iPhone XS Max", type: .iPhone),
+    "iPhone11,6" : (name: "iPhone XS Max (China)", type: .iPhone),
+    "iPhone11,8" : (name: "iPhone XR", type: .iPhone),
+    "iPhone12,1" : (name: "iPhone 11", type: .iPhone),
+    "iPhone12,3" : (name: "iPhone 11 Pro", type: .iPhone),
+    "iPhone12,5" : (name: "iPhone 11 Pro Max", type: .iPhone),
+    "iPhone12,8" : (name: "iPhone SE (2020)", type: .iPhone),
+    "iPhone13,1" : (name: "iPhone 12 Mini", type: .iPhone),
+    "iPhone13,2" : (name: "iPhone 12", type: .iPhone),
+    "iPhone13,3" : (name: "iPhone 12 Pro", type: .iPhone),
+    "iPhone13,4" : (name: "iPhone 12 Pro Max", type: .iPhone),
     
     /* iPad */
-    "iPad1,1"   :["iPad 1 ": .iPad],
-    "iPad2,1"   :["iPad 2 WiFi": .iPad],
-    "iPad2,2"   :["iPad 2 Cell": .iPad],
-    "iPad2,3"   :["iPad 2 Cell":  .iPad],
-    "iPad2,4"   :["iPad 2 WiFi":  .iPad],
-    "iPad2,5"   :["iPad Mini WiFi":  .iPad],
-    "iPad2,6"   :["iPad Mini Cell":  .iPad],
-    "iPad2,7"   :["iPad Mini Cell":  .iPad],
-    "iPad3,1"   :["iPad 3 WiFi":  .iPad],
-    "iPad3,2"   :["iPad 3 Cell":  .iPad],
-    "iPad3,3"   :["iPad 3 Cell":  .iPad],
-    "iPad3,4"   :["iPad 4 WiFi":  .iPad],
-    "iPad3,5"   :["iPad 4 Cell":  .iPad],
-    "iPad3,6"   :["iPad 4 Cell":  .iPad],
-    "iPad4,1"   :["iPad Air WiFi":  .iPad],
-    "iPad4,2"   :["iPad Air Cell":  .iPad],
-    "iPad4,3"   :["iPad Air China":  .iPad],
-    "iPad4,4"   :["iPad Mini 2 WiFi":  .iPad],
-    "iPad4,5"   :["iPad Mini 2 Cell":  .iPad],
-    "iPad4,6"   :["iPad Mini 2 China":  .iPad],
-    "iPad4,7"   :["iPad Mini 3 WiFi":  .iPad],
-    "iPad4,8"   :["iPad Mini 3 Cell":  .iPad],
-    "iPad4,9"   :["iPad Mini 3 China":  .iPad],
-    "iPad5,1"   :["iPad Mini 4 WiFi":  .iPad],
-    "iPad5,2"   :["iPad Mini 4 Cell":  .iPad],
-    "iPad5,3"   :["iPad Air 2 WiFi":  .iPad],
-    "iPad5,4"   :["iPad Air 2 Cell":  .iPad],
-    "iPad6,3"   :["iPad Pro 9.7inch WiFi":  .iPad],
-    "iPad6,4"   :["iPad Pro 9.7inch Cell":  .iPad],
-    "iPad6,7"   :["iPad Pro 12.9inch WiFi":  .iPad],
-    "iPad6,8"   :["iPad Pro 12.9inch Cell":  .iPad],
-    "iPad6,11"  :["iPad 5th":  .iPad],
-    "iPad6,12"  :["iPad 5th":  .iPad],
-    "iPad7,1"   :["iPad Pro 12.9inch 2nd":  .iPad],
-    "iPad7,2"   :["iPad Pro 12.9inch 2nd":  .iPad],
-    "iPad7,3"   :["iPad Pro 10.5inch":  .iPad],
-    "iPad7,4"   :["iPad Pro 10.5inch":  .iPad],
-    "iPad7,5"   :["iPad 6th":  .iPad],
-    "iPad7,6"   :["iPad 6th":  .iPad],
-    "iPad8,1"   :["iPad Pro 11inch WiFi":  .iPad],
-    "iPad8,2"   :["iPad Pro 11inch WiFi":  .iPad],
-    "iPad8,3"   :["iPad Pro 11inch Cell":  .iPad],
-    "iPad8,4"   :["iPad Pro 11inch Cell":  .iPad],
-    "iPad8,5"   :["iPad Pro 12.9inch WiFi":  .iPad],
-    "iPad8,6"   :["iPad Pro 12.9inch WiFi":  .iPad],
-    "iPad8,7"   :["iPad Pro 12.9inch Cell":  .iPad],
-    "iPad8,8"   :["iPad Pro 12.9inch Cell":  .iPad],
-    "iPad11,1"  :["iPad Mini 5th WiFi":  .iPad],
-    "iPad11,2"  :["iPad Mini 5th Cell":  .iPad],
-    "iPad11,3"  :["iPad Air 3rd WiFi":  .iPad],
-    "iPad11,4"  :["iPad Air 3rd Cell":  .iPad],
+    "iPad1,1" : (name: "iPad", type: .iPad),
+    "iPad1,2" : (name: "iPad 3G", type: .iPad),
+    "iPad2,1" : (name: "iPad 2 WiFi", type: .iPad),
+    "iPad2,2" : (name: "iPad 2 GSM", type: .iPad),
+    "iPad2,3" : (name: "iPad 2 CDMA", type: .iPad),
+    "iPad2,4" : (name: "iPad 2 CDMA (2012)", type: .iPad),
+    "iPad2,5" : (name: "iPad Mini WiFi", type: .iPad),
+    "iPad2,6" : (name: "iPad Mini GSM", type: .iPad),
+    "iPad2,7" : (name: "iPad Mini Global", type: .iPad),
+    "iPad3,1" : (name: "iPad 3 Wifi", type: .iPad),
+    "iPad3,2" : (name: "iPad 3 CDMA", type: .iPad),
+    "iPad3,3" : (name: "iPad 3 GSM", type: .iPad),
+    "iPad3,4" : (name: "iPad 4 Wifi", type: .iPad),
+    "iPad3,5" : (name: "iPad 4 GSM", type: .iPad),
+    "iPad3,6" : (name: "iPad 4 Global", type: .iPad),
+    "iPad4,1" : (name: "iPad Air Wifi", type: .iPad),
+    "iPad4,2" : (name: "iPad Air Cellular", type: .iPad),
+    "iPad4,3" : (name: "iPad Air Cellular (China)", type: .iPad),
+    "iPad4,4" : (name: "iPad Mini 2 Wifi", type: .iPad),
+    "iPad4,5" : (name: "iPad Mini 2 Cellular", type: .iPad),
+    "iPad4,6" : (name: "iPad Mini 2 Cellular (China)", type: .iPad),
+    "iPad4,7" : (name: "iPad Mini 3 Wifi", type: .iPad),
+    "iPad4,8" : (name: "iPad Mini 3 Cellular", type: .iPad),
+    "iPad4,9" : (name: "iPad Mini 3 Cellular (China)", type: .iPad),
+    "iPad5,1" : (name: "iPad Mini 4 Wifi", type: .iPad),
+    "iPad5,2" : (name: "iPad Mini 4 Cellular", type: .iPad),
+    "iPad5,3" : (name: "iPad Air 2 Wifi", type: .iPad),
+    "iPad5,4" : (name: "iPad Air 2 Cellular", type: .iPad),
+    "iPad6,3" : (name: "iPad Pro 9.7 Wifi", type: .iPad),
+    "iPad6,4" : (name: "iPad Pro 9.7 Cellular", type: .iPad),
+    "iPad6,7" : (name: "iPad Pro 12.9 Wifi", type: .iPad),
+    "iPad6,8" : (name: "iPad Pro 12.9 Cellular", type: .iPad),
+    "iPad6,11" : (name: "iPad Pro 9.7 5th Gen Wifi", type: .iPad),
+    "iPad6,12" : (name: "iPad Pro 9.7 5th Gen　Cellular", type: .iPad),
+    "iPad7,1" : (name: "iPad Pro 2 12.9 WiFi", type: .iPad),
+    "iPad7,2" : (name: "iPad Pro 2 12.9 Cellular", type: .iPad),
+    "iPad7,3" : (name: "iPad Pro 10.5 Wifi", type: .iPad),
+    "iPad7,4" : (name: "iPad Pro 10.5 Cellular", type: .iPad),
+    "iPad7,5" : (name: "iPad 9.7 6th Gen Wifi", type: .iPad),
+    "iPad7,6" : (name: "iPad 9.7 6th Gen　Cellular", type: .iPad),
+    "iPad7,11" : (name: "iPad 10.2 7th Gen Wifi", type: .iPad),
+    "iPad7,12" : (name: "iPad 10.2 7th Gen　Cellular", type: .iPad),
+    "iPad8,1" : (name: "iPad Pro 11 Wifi", type: .iPad),
+    "iPad8,2" : (name: "iPad Pro 11 Wifi (1TB)", type: .iPad),
+    "iPad8,3" : (name: "iPad Pro 11 Cellular", type: .iPad),
+    "iPad8,4" : (name: "iPad Pro 11 Cellular (1TB)", type: .iPad),
+    "iPad8,5" : (name: "iPad Pro 12.9 Wifi", type: .iPad),
+    "iPad8,6" : (name: "iPad Pro 12.9 Wifi (1TB)", type: .iPad),
+    "iPad8,7" : (name: "iPad Pro 12.9 Cellular", type: .iPad),
+    "iPad8,8" : (name: "iPad Pro 12.9 Cellular (1TB)", type: .iPad),
+    "iPad8,9" : (name: "iPad Pro 11 2nd Gen Wifi", type: .iPad),
+    "iPad8,10" : (name: "iPad Pro 11 2nd Gen Cellular", type: .iPad),
+    "iPad8,11" : (name: "iPad Pro 12.9 4th Gen Wifi", type: .iPad),
+    "iPad8,12" : (name: "iPad Pro 12.9 4th Gen Cellular", type: .iPad),
+    "iPad11,1" : (name: "iPad Mini 5 Wifi", type: .iPad),
+    "iPad11,2" : (name: "iPad Mini 5 Cellular", type: .iPad),
+    "iPad11,3" : (name: "iPad Air 3 Wifi", type: .iPad),
+    "iPad11,4" : (name: "iPad Air 3 Cellular", type: .iPad),
+    "iPad11,6" : (name: "iPad 10.2 8th Gen Wifi", type: .iPad),
+    "iPad11,7" : (name: "iPad 10.2 8th Gen Cellular", type: .iPad),
+    "iPad13,1" : (name: "iPad Air 4 Wifi", type: .iPad),
+    "iPad13,2" : (name: "iPad Air 4 Cellular", type: .iPad),
     
-    /* watch */
-    "Watch1,1"  :["Apple Watch 38mm":  .watch],
-    "Watch1,2"  :["Apple Watch 42mm":  .watch],
-    "Watch2,6"  :["Apple Watch Series 1 38mm":  .watch],
-    "Watch2,7"  :["Apple Watch Series 1 42mm":  .watch],
-    "Watch2,3"  :["Apple Watch Series 2 38mm":  .watch],
-    "Watch2,4"  :["Apple Watch Series 2 42mm":  .watch],
-    "Watch3,1"  :["Apple Watch Series 3 38mm (GPS+Cellular)":  .watch],
-    "Watch3,2"  :["Apple Watch Series 3 42mm (GPS+Cellular)":  .watch],
-    "Watch3,3"  :["Apple Watch Series 3 38mm (GPS)":  .watch],
-    "Watch3,4"  :["Apple Watch Series 3 42mm (GPS)":  .watch],
-    "Watch4,1"  :["Apple Watch Series 4 40mm (GPS)":  .watch],
-    "Watch4,2"  :["Apple Watch Series 4 44mm (GPS)":  .watch],
-    "Watch4,3"  :["Apple Watch Series 4 40mm (GPS+Cellular)":  .watch],
-    "Watch4,4"  :["Apple Watch Series 4 44mm (GPS+Cellular)":  .watch],
-    "Watch5,1"  :["Apple Watch Series 5 40mm (GPS)":  .watch],
-    "Watch5,2"  :["Apple Watch Series 5 44mm (GPS)":  .watch],
-    "Watch5,3"  :["Apple Watch Series 5 40mm (GPS+Cellular)":  .watch],
-    "Watch5,4"  :["Apple Watch Series 5 44mm (GPS+Cellular)":  .watch],
+    /* iPod */
+    "iPod1,1" : (name: "iPod 1Gen", type: .iPod),
+    "iPod2,1" : (name: "iPod 2Gen", type: .iPod),
+    "iPod3,1" : (name: "iPod 3Gen", type: .iPod),
+    "iPod4,1" : (name: "iPod 4Gen", type: .iPod),
+    "iPod5,1" : (name: "iPod 5Gen", type: .iPod),
+    "iPod7,1" : (name: "iPod 6Gen", type: .iPod),
+    "iPod9,1" : (name: "iPod 7Gen", type: .iPod),
     
-    /* unknown */
-    "unknown"   :["Unknown Device" : .unknown],
+    /* Apple Watch */
+    "Watch1,1" : (name: "Apple Watch 38mm", type: .watch),
+    "Watch1,2" : (name: "Apple Watch 42mm", type: .watch),
+    "Watch2,3" : (name: "Apple Watch Series 2 38mm", type: .watch),
+    "Watch2,4" : (name: "Apple Watch Series 2 42mm", type: .watch),
+    "Watch2,6" : (name: "Apple Watch Series 1 38mm", type: .watch),
+    "Watch2,7" : (name: "Apple Watch Series 1 42mm", type: .watch),
+    "Watch3,1" : (name: "Apple Watch Series 3 38mm Cellular", type: .watch),
+    "Watch3,2" : (name: "Apple Watch Series 3 42mm Cellular", type: .watch),
+    "Watch3,3" : (name: "Apple Watch Series 3 38mm GPS", type: .watch),
+    "Watch3,4" : (name: "Apple Watch Series 3 42mm GPS", type: .watch),
+    "Watch4,1" : (name: "Apple Watch Series 4 40mm GPS", type: .watch),
+    "Watch4,2" : (name: "Apple Watch Series 4 44mm GPS", type: .watch),
+    "Watch4,3" : (name: "Apple Watch Series 4 40mm Cellular", type: .watch),
+    "Watch4,4" : (name: "Apple Watch Series 4 44mm Cellular", type: .watch),
+    "Watch5,1" : (name: "Apple Watch Series 5 40mm GPS", type: .watch),
+    "Watch5,2" : (name: "Apple Watch Series 5 44mm GPS", type: .watch),
+    "Watch5,3" : (name: "Apple Watch Series 5 40mm Cellular", type: .watch),
+    "Watch5,4" : (name: "Apple Watch Series 5 44mm Cellular", type: .watch),
+    "Watch5,9" : (name: "Apple Watch Series SE 40mm GPS", type: .watch),
+    "Watch5,10" : (name: "Apple Watch Series SE 44mm GPS", type: .watch),
+    "Watch5,11" : (name: "Apple Watch Series SE 40mm Cellular", type: .watch),
+    "Watch5,12" : (name: "Apple Watch Series SE 44mm Cellular", type: .watch),
+    "Watch6,1" : (name: "Apple Watch Series 6 40mm GPS", type: .watch),
+    "Watch6,2" : (name: "Apple Watch Series 6 44mm GPS", type: .watch),
+    "Watch6,3" : (name: "Apple Watch Series 6 40mm Cellular", type: .watch),
+    "Watch6,3" : (name: "Apple Watch Series 6 44mm Cellular", type: .watch),
+    
+    /* UnKnown */
+    "unknown"   : (name: "Unknown Device", type: .unknown)
 ]
 
 final public class AppleDevice {
@@ -159,34 +191,21 @@ final public class AppleDevice {
 final public class AppleDeviceInfo {
     
     // MARK: - Con(De)structor
-    private init(code: String, infos: [String : AppleDeviceType]) {
-        m_code = code
-        m_productName = infos.keys.first!
-        m_type = infos[m_productName]!
+    private init(code: String, productName: String, type: AppleDeviceType) {
+        self.code = code
+        self.productName = productName
+        self.type = type
     }
     
     // MARK: - Properties
-    private var m_type: AppleDeviceType
-    public var type: AppleDeviceType {
-        return m_type
-    }
-    
-    private var m_code: String
-    public var code: String {
-        return m_code
-    }
-    
-    private var m_productName: String
-    public var productName: String {
-        return m_productName
-    }
+    public private(set) var code: String
+    public private(set) var productName: String
+    public private(set) var type: AppleDeviceType
     
     // MARK: - Private Static Methods
     
     fileprivate static func classify(code: String) -> AppleDeviceInfo {
-        guard let dictionary = DeviceDictionary[code] else {
-            return AppleDeviceInfo(code: "unknown", infos: DeviceDictionary["unknown"]!)
-        }
-        return AppleDeviceInfo(code: code, infos: dictionary)
+        guard let dictionary = DeviceDictionary[code] else { return AppleDeviceInfo(code: "unknown", productName: "Unknown Device", type: .unknown) }
+        return AppleDeviceInfo(code: code, productName: dictionary.name, type: dictionary.type)
     }
 }

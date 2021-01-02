@@ -20,8 +20,11 @@
 
 > Extensions
 - Array
+- CGFloat
 - CGRect
 - Date
+- Double
+- Float
 - Formatter
 - Int
 - NSAttributedString
@@ -37,12 +40,14 @@
 - UITableViewCell
 - UIViewController
 - UIWindow
+- URL 
 > Protocols
 - AppColorProtocol
 - AppFontProtocol
 - AppNotificationProtocol
 > General
 - AppleDevice
+- DataStructure
 
 ## Usage
 
@@ -50,7 +55,7 @@
 
 - AppColorProtocol
 ```swift
-enum  AppColor: String, AppColorProtocol {
+enum　AppColor: String, AppColorProtocol {
     var hex: String {
         return self.rawValue
     }
@@ -71,7 +76,7 @@ AppColor.someColor3.cgColor
 
 - AppFontProtocol
 ```swift
-enum  AppFont: String, AppFontProtocol {
+enum AppFont: String, AppFontProtocol {
 
     var name: String {
         return self.rawValue
@@ -106,7 +111,11 @@ AppNotification.signIn.removeObserver(observer: Any, object: Any?)
 
 > General
 ```swift
-AppleDevice.getDeviceInfo()
+let info = AppleDevice.getDeviceInfo()
+
+Array<Element>().stack()
+Array<Element>().queue()
+Array<Element>().deque()
 ```
 
 
@@ -116,7 +125,7 @@ NibSwift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NibSwift', :tag => '2.2.0', :git => 'https://github.com/nibdevn/NibSwift'
+pod 'NibSwift', :tag => '3.0.0', :git => 'https://github.com/nibdevn/NibSwift'
 ```
 ## Example
 
