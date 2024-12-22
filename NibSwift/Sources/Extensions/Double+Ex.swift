@@ -1,25 +1,33 @@
 import Foundation
+import UIKit
 
 extension Double {
     
-    public var ceilValue: Double { ceil(self) }
-    
-    public var floorValue: Double { floor(self) }
-    
-    public var roundValue: Double { float.roundValue.double }
+    public var int: Int { Int(self) }
     
     public var float: Float { Float(self) }
     
-    public var int: Int { Int(self) }
+    public var cgfloat: CGFloat { CGFloat(self) }
     
-    public var cgfloat: CGFloat { CGFloat(self) } 
+    public var reciprocal: Double { (1 / self) }
     
-    public static func random(_ range: ClosedRange<Double>) -> Double {
-        return Double(arc4random()) / Double(UInt64(UINT32_MAX)) * (range.upperBound - range.lowerBound) + range.lowerBound
+    public func ceils(point: UInt = 0) -> Double {
+        let decimal = Double(pow(10, CGFloat(point)))
+        return ceil(self * decimal) / decimal
+    }
+    
+    public func floors(point: UInt = 0) -> Double {
+        let decimal = Double(pow(10, CGFloat(point)))
+        return floor(self * decimal) / decimal
+    }
+    
+    public func rounds(point: UInt = 0) -> Double {
+        let decimal = Double(pow(10, CGFloat(point)))
+        return Foundation.round(self * decimal) / decimal
     }
     
     public static func random(min: Double, max: Double) -> Double {
-        guard min < max else { fatalError() }
-        return random(min...max)
+        guard min <= max else { fatalError() }
+        return random(in: min...max)
     }
 }

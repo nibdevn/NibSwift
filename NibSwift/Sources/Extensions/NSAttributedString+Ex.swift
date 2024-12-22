@@ -2,6 +2,8 @@ import Foundation
 
 extension NSAttributedString {
     
+    public var mutable: NSMutableAttributedString { NSMutableAttributedString(attributedString: self) }
+    
     public static func parseHTML2Text(sourceText text: String) -> NSAttributedString? {
         let encodeData = text.data(using: String.Encoding.utf8, allowLossyConversion: true)
         let attributedOptions = [
@@ -21,4 +23,15 @@ extension NSAttributedString {
         }
         return attributedString
     }
+}
+
+public func +(lhs: NSAttributedString, rhs: NSAttributedString) -> NSMutableAttributedString {
+    let result = NSMutableAttributedString(string: lhs.string + rhs.string)
+    lhs.enumerateAttributes(in: lhs.string.nsRange(), options: .longestEffectiveRangeNotRequired) { (attribute, range, pointer) in
+        result.addAttributes(attribute, range: range)
+    }
+    rhs.enumerateAttributes(in: rhs.string.nsRange(), options: .longestEffectiveRangeNotRequired) { (attribute, range, pointer) in
+        result.addAttributes(attribute, range: NSRange(location: lhs.length + range.location, length: range.length))
+    }
+    return result
 }

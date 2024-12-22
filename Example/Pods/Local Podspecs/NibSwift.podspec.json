@@ -1,6 +1,6 @@
 {
   "name": "NibSwift",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "summary": "This is NibSwift.",
   "description": "This is NibSwift. Thank you",
   "homepage": "https://github.com/nibdevn/NibSwift",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/nibdevn/NibSwift.git",
-    "tag": "3.0.0"
+    "tag": "3.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
   "swift_versions": "4.2",
   "source_files": "NibSwift/Sources/**/*",

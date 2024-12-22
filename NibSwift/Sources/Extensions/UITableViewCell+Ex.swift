@@ -4,12 +4,13 @@ import UIKit
 extension UITableViewCell {
     
     public func setBackgroundColor(_ color: UIColor) {
+        let view = UIView()
+        view.backgroundColor = color
+        backgroundView = view
         if #available(iOS 13.0, *) {
             contentView.backgroundColor = color
         }else {
-            let view = UIView()
-            view.backgroundColor = color
-            self.backgroundView = view
+            backgroundColor = color
         }
     }
 }
@@ -17,12 +18,13 @@ extension UITableViewCell {
 extension UITableViewHeaderFooterView {
     
     public func setBackgroundColor(_ color: UIColor) {
+        let view = UIView()
+        view.backgroundColor = color
+        backgroundView = view
         if #available(iOS 13.0, *) {
             contentView.backgroundColor = color
         }else {
-            let view = UIView()
-            view.backgroundColor = color
-            self.backgroundView = view
+            backgroundColor = color
         }
     }
 }

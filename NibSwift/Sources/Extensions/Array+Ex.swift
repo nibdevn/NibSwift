@@ -1,5 +1,3 @@
-import Foundation
-
 extension Array {
     
     public mutating func sorting(from: Int, to: Int) {
@@ -8,26 +6,25 @@ extension Array {
         self.remove(at: from > to ? from + 1 : from)
     }
     
-    public mutating func replace(_ index: Int ,at value: Element) {
+    public mutating func replace(_ index: Int, at value: Element) {
         guard self.count > index && index >= 0 else { return }
         self[index] = value
     }
     
-    public mutating func change(from: Int , to: Int) {
-        guard self.count > from && self.count > to && from != to && from >= 0 && to >= 0 else { return }
-        let fromItem = self[from]
-        let toItem = self[to]
-        self[from] = toItem
-        self[to] = fromItem
+    public mutating func swap(_ i: Int, _ j: Int) {
+        guard self.count > i && self.count > j && i != j && i >= 0 && j >= 0 else { return }
+        let iItem = self[i]
+        let jItem = self[j]
+        self[i] = jItem
+        self[j] = iItem
     }
     
-    public func dictionary<Key: Hashable, Value: Any>( _ wrapping: (Element) -> (key: Key, value: Value)) -> [Key: Value] {
-        var result = [Key: Value]()
-        self.forEach {
-            let wrapped = wrapping($0)
-            result[wrapped.key] = wrapped.value
-        }
-        return result
+    /// - Parameters:
+    ///     - start: This value must be greater than or equal to 0.
+    ///     - size:
+    public func subArray(start: Int = 0, size: Int) -> [Element] {
+        guard start >= 0 && size > 0 else { return [] }
+        return (start..<Swift.min(start + size, count)).map { self[$0] }
     }
     
     public func stack() -> Stack<Element> {
@@ -41,29 +38,9 @@ extension Array {
     public func deque() -> Deque<Element> {
         return Deque(self)
     }
-    
-    public func random(count: Int) -> [Element] {
-        guard self.count > 0 && count > 0 else { return [] }
-        return (0..<count).map { _ in return self[Int.random(min: 0, max: self.count-1)] }
-    }
-}
-
-extension Array where Element: Hashable {
-    
-    public func unique() -> [Element] {
-        return Array(Set(self))
-    }
 }
 
 extension Array where Element: Equatable {
-    
-    public func unique() -> [Element] {
-        var result: [Element] = []
-        for element in self where result.contains(element) == false {
-            result.append(element)
-        }
-        return result
-    }
     
     public func random(count: Int, isUnique: Bool) -> [Element] {
         guard isUnique && unique().count >= count else { return random(count: count) }

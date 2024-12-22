@@ -1,5 +1,5 @@
 PODS:
-  - NibSwift (3.0.0)
+  - NibSwift (3.1.0)
 
 DEPENDENCIES:
   - NibSwift (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NibSwift: 2d0de61201cfccc4f47661f3841a738195ef17e5
+  NibSwift: b5a258f6e97751791e7f24ba86f6f17e27b2a514
 
 PODFILE CHECKSUM: 93d3a77279dd0f0a8685ab2b15596728762ad0a9
 

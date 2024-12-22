@@ -3,62 +3,88 @@ import UIKit
 
 extension String {
     
-    public var stringTrim: String {
-       return trimmingCharacters(in: .whitespacesAndNewlines)
+    public var nsString: NSString {
+        return (self as NSString)
+    }
+    
+    public func nsRange(of value: String? = nil) -> NSRange {
+        return nsString.range(of: value ?? self)
+    }
+    
+    public var trim: String {
+        return trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
     public func localizedWithComment(comment: String) -> String {
         return NSLocalizedString(self, comment: comment)
     }
     
-    public func arrayBySplit(splitter: String? = nil) -> [String] {
-        guard let split = splitter else { return components(separatedBy: .whitespacesAndNewlines) }
-        return components(separatedBy: split)
+    public func split(separator: String? = nil) -> [String] {
+        guard let sep = separator else { return components(separatedBy: .whitespacesAndNewlines) }
+        return components(separatedBy: sep)
     }
     
-    public func evaluateStringWidth (font: UIFont) -> CGFloat {
-        let fontAttributes = [NSAttributedString.Key.font: font]
-        return (self as NSString).size(withAttributes: fontAttributes).width
+    public enum SizeWith {
+        case none
+        case width(CGFloat)
+        case height(CGFloat)
     }
     
-    public func heightForWidth(width: CGFloat, font: UIFont) -> CGFloat {
-        let rect = NSString(string: self).boundingRect(
-            with: CGSize(width: width, height: CGFloat(MAXFLOAT)),
-            options: .usesLineFragmentOrigin,
-            attributes: [kCTFontAttributeName as NSAttributedString.Key: font],
-            context: nil
-        )
-        return ceil(rect.height)
+    public func size(font: UIFont, by sizeWith: SizeWith = .none) -> CGSize {
+        var with = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
+        switch sizeWith {
+        case .none: with = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
+        case .width(let by): with = CGSize(width: by, height: CGFloat.greatestFiniteMagnitude)
+        case .height(let by): with = CGSize(width: CGFloat.greatestFiniteMagnitude, height: by)
+        }
+        let boundingRect = nsString.boundingRect(
+            with: with,
+            options: [.usesFontLeading, .usesLineFragmentOrigin],
+            attributes: [.font: font as Any],
+            context: nil).size
+        return CGSize(width: boundingRect.width, height: boundingRect.height)
     }
     
-    public func getSizeString(font: UIFont) -> CGSize {
-        return NSString(string: self).boundingRect(
-                with: CGSize(width: CGFloat(MAXFLOAT), height: CGFloat(MAXFLOAT)),
-                options: .usesLineFragmentOrigin,
-                attributes: [kCTFontAttributeName as NSAttributedString.Key: font],
-                context: nil
-            ).size
+    public func size(font: UIFont, width: CGFloat? = nil, height: CGFloat? = nil) -> CGSize {
+        let boundingRect = nsString.boundingRect(
+            with: CGSize(width: width ?? CGFloat.greatestFiniteMagnitude, height: height ?? CGFloat.greatestFiniteMagnitude),
+            options: [.usesFontLeading, .usesLineFragmentOrigin],
+            attributes: [.font: font as Any],
+            context: nil).size
+        return CGSize(width: boundingRect.width.ceils(point: 3), height: boundingRect.height.ceils(point: 3))
     }
     
-    public func attributedString(value: String, attribute: [NSAttributedString.Key: Any]) -> NSMutableAttributedString {
+    public func size(font: UIFont, numberOfLines: Int, width: CGFloat? = nil) -> CGSize {
+        let height: CGFloat = numberOfLines > 0 ? font.lineHeight * numberOfLines.cgfloat : CGFloat.greatestFiniteMagnitude
+        return size(font: font, width: width, height: height)
+    }
+    
+    public func numberOfLines(font: UIFont, width: CGFloat) -> Int {
+        return (size(font: font, width: width).height / font.lineHeight).floors().int
+    }
+    
+    public func attributed(value: String? = nil, attribute: [NSAttributedString.Key: Any]) -> NSMutableAttributedString {
         let attributedString = NSMutableAttributedString(string: self)
-        attributedString.addAttributes(attribute, range: (self as NSString).range(of: value))
-        return attributedString
+        return attributedString.attributed(value: value ?? self, attribute: attribute)
     }
     
     public func attributedString(values: [String], attribute: [NSAttributedString.Key: Any]) -> NSMutableAttributedString {
         let attributedString = NSMutableAttributedString(string: self)
-        values.forEach {
-            attributedString.addAttributes(attribute, range: (self as NSString).range(of: $0))
-        }
-        return attributedString
+        return attributedString.attributed(values: values, attribute: attribute)
     }
     
     public func attributedString(attributes: [String: [NSAttributedString.Key: Any]]) -> NSMutableAttributedString {
         let attributedString = NSMutableAttributedString(string: self)
-        attributes.keys.filter { attributes[$0] != nil }.forEach {
-            attributedString.addAttributes(attributes[$0]!, range: (self as NSString).range(of: $0))
-        }
-        return attributedString
+        return attributedString.attributed(attributes: attributes)
+    }
+    
+    public func appendPath(_ value: CustomStringConvertible) -> String {
+        var result = self
+        if result.last == "/", value.description.first == "/" { result = String(result.dropLast()) }
+        if result.last != "/", value.description.first != "/" { result.append("/") }
+        return result + value.description
     }
 }
+
+public func +(lhs: String, rhs: CustomStringConvertible) -> String { lhs + rhs.description }
+public func +=(lhs: inout String, rhs: CustomStringConvertible) { lhs += rhs.description }

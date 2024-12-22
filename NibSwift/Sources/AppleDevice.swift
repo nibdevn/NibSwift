@@ -2,9 +2,9 @@ import Foundation
 
 public enum AppleDeviceType {
     case simulator
+    case iPad
     case iPhone
     case iPod
-    case iPad
     case watch
     case tv
     case unknown

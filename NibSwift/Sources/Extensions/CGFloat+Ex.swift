@@ -1,12 +1,7 @@
-import Foundation
+#if canImport(CoreGraphics)
+import CoreGraphics
 
 extension CGFloat {
-    
-    public var ceilValue: CGFloat { ceil(self) }
-    
-    public var floorValue: CGFloat { floor(self) }
-    
-    public var roundValue: CGFloat { float.roundValue.cgfloat }
     
     public var int: Int { Int(self) }
     
@@ -14,12 +9,26 @@ extension CGFloat {
     
     public var double: Double { Double(self) }
     
-    public static func random(_ range: ClosedRange<CGFloat>) -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UInt64(UINT32_MAX)) * (range.upperBound - range.lowerBound) + range.lowerBound
+    public var reciprocal: CGFloat { (1 / self) }
+    
+    public func ceils(point: UInt = 0) -> CGFloat {
+        let decimal = CGFloat(pow(10, CGFloat(point)))
+        return ceil(self * decimal) / decimal
+    }
+    
+    public func floors(point: UInt = 0) -> CGFloat {
+        let decimal = CGFloat(pow(10, CGFloat(point)))
+        return floor(self * decimal) / decimal
+    }
+    
+    public func rounds(point: UInt = 0) -> CGFloat {
+        let decimal = CGFloat(pow(10, CGFloat(point)))
+        return Foundation.round(self * decimal) / decimal
     }
     
     public static func random(min: CGFloat, max: CGFloat) -> CGFloat {
-        guard min < max else { fatalError() }
-        return random(min...max)
+        guard min <= max else { fatalError() }
+        return random(in: min...max)
     }
 }
+#endif

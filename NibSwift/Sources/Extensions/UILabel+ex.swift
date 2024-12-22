@@ -4,7 +4,7 @@ import UIKit
 extension UILabel {
     
     public var fitSize: CGSize {
-        return (text ?? "").getSizeString(font: font)
+        return (text ?? "").size(font: font)
     }
     
     public var fitWidth: CGFloat {

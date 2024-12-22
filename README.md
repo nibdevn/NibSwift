@@ -21,15 +21,19 @@
 > Extensions
 - Array
 - CGFloat
+- CGPoint
 - CGRect
+- CGSize
 - Date
 - Double
 - Float
 - Formatter
 - Int
 - NSAttributedString
+- NSMutableAttributedString
 - Optional
 - String
+- Timezone
 - UIApplication
 - UICollectionViewCell
 - UIColor
@@ -125,7 +129,7 @@ NibSwift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NibSwift', :tag => '3.0.0', :git => 'https://github.com/nibdevn/NibSwift'
+pod 'NibSwift', :tag => '3.1.0', :git => 'https://github.com/nibdevn/NibSwift'
 ```
 ## Example
 

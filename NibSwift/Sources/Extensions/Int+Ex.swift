@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 extension Int {
     
@@ -10,20 +11,22 @@ extension Int {
     
     public var isNegative: Bool { self < 0 }
     
+    public var isZero: Bool { self == 0 }
+    
     public var float: Float { Float(self) }
     
     public var double: Double { Double(self) }
     
     public var cgfloat: CGFloat { CGFloat(self) }
     
-    public var decimal: String { Formatter.numberFormatter().string(from: NSNumber(value:self)) ?? "" }
+    public var reciprocal: Double { self.double.reciprocal }
     
-    public static func random(_ range: ClosedRange<Int>) -> Int {
-        return range.lowerBound + Int(arc4random_uniform(UInt32(range.upperBound - range.lowerBound + 1)))
-    }
+    public var comma: String { Formatter.numberFormatter().string(from: NSNumber(value: self)) ?? "" }
+    
+    public func range(start: Int = 0) -> CountableRange<Int> { (start..<self) }
     
     public static func random(min: Int, max: Int) -> Int {
-        guard min < max else { fatalError() }
-        return random(min...max)
+        guard min <= max else { fatalError() }
+        return random(in: min...max)
     }
 }

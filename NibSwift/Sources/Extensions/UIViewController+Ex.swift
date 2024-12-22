@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 extension UIViewController {
@@ -7,30 +8,29 @@ extension UIViewController {
         return CGRect(origin: self.view.frame.origin, size: size)
     }
     
-    public class func topViewController(controller: UIViewController? = UIWindow.keyWindow?.rootViewController) -> UIViewController? {
+    public class func topViewController(at controller: UIViewController? = UIWindow.keyWindow?.rootViewController) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {
-            return topViewController(controller: navigationController.visibleViewController)
+            return topViewController(at: navigationController.visibleViewController)
         }
         if let tabController = controller as? UITabBarController {
             if let selected = tabController.selectedViewController {
-                return topViewController(controller: selected)
+                return topViewController(at: selected)
             }
         }
         if let presented = controller?.presentedViewController {
-            return topViewController(controller: presented)
+            return topViewController(at: presented)
         }
         return controller
     }
     
-    public static func getViewController(storyboad: String, bundle: Bundle? = nil) -> UIViewController {
-        let storyboard: UIStoryboard = UIStoryboard(name: storyboad, bundle: bundle)
-        let viewController = storyboard.instantiateInitialViewController()
-        return viewController!
+    public static func getViewController(storyboard: String, bundle: Bundle? = nil) -> UIViewController? {
+        let _storyboard: UIStoryboard = UIStoryboard(name: storyboard, bundle: bundle)
+        return _storyboard.instantiateInitialViewController()
     }
     
-    public static func getViewController(storyboad: String, identifier: String, bundle: Bundle? = nil) -> UIViewController {
-        let storyboard: UIStoryboard = UIStoryboard(name: storyboad, bundle: bundle)
-        let viewController = storyboard.instantiateViewController(withIdentifier: identifier)
-        return viewController
+    public static func getViewController(storyboard: String, identifier: String, bundle: Bundle? = nil) -> UIViewController {
+        let _storyboard: UIStoryboard = UIStoryboard(name: storyboard, bundle: bundle)
+        return _storyboard.instantiateViewController(withIdentifier: identifier)
     }
 }
+#endif

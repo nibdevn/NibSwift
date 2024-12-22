@@ -104,4 +104,3 @@ public struct Deque<Element> {
 extension Deque: CustomStringConvertible {
     public var description: String { elements.description }
 }
-
